@@ -86,6 +86,7 @@ button {
 
 /* Hero */
 .hero {
+  text-align: center;
   background-color: var(--hero-bg-color);
 }
 
