@@ -8,6 +8,8 @@
   --team-bg-color: #f5f4fa;
   --logo-black-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+  --portfolio-border-color: #ececec;
 }
 
 body {
