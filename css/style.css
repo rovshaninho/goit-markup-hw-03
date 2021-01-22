@@ -137,14 +137,30 @@ header > .container {
   color: var(--title-color);
 }
 
+.list-contacts {
+  display: flex;
+}
+
 /* Hero */
 .hero {
   text-align: center;
   background-color: var(--hero-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 }
 
 /* === main hero title === */
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   color: var(--hero-title-color);
   font-weight: 900;
   font-size: 44px;
@@ -152,6 +168,14 @@ header > .container {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* === hero-button design === */
@@ -163,6 +187,9 @@ header > .container {
 
   background-color: var(--accent-color);
   color: var(--hero-title-color);
+
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 /* === hidden title - main page === */
@@ -235,7 +262,7 @@ and
 }
 
 /* === portfolio.html === */
-.buttons {
+.buttons-list {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -246,8 +273,8 @@ and
   background-color: var(--team-bg-color);
 }
 
-.buttons:focus,
-.buttons:hover {
+.buttons-list:focus,
+.buttons-list:hover {
   color: var(--hero-title-color);
   background-color: var(--accent-color);
 }
