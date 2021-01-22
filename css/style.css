@@ -8,8 +8,8 @@
   --team-bg-color: #f5f4fa;
   --logo-black-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
-  --border-color: #eeeeee;
-  --portfolio-border-color: #ececec;
+  --border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
 
 /* === reset decoration links === */
 a {
+  display: block;
   text-decoration: none;
   color: var(--title-color);
 }
@@ -40,9 +41,31 @@ button {
   cursor: pointer;
 }
 
+header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 /* === navigation === */
 .site-nav {
   font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 
 /* logo design */
@@ -53,8 +76,22 @@ button {
 
   color: var(--accent-color);
 }
+
+.site-nav > .logo {
+  margin-right: 93px;
+}
+
 .header-studio {
   color: var(--logo-black-color);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list > li:not(:last-child),
+.list-contacts > li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-list,
@@ -74,6 +111,18 @@ button {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--accent-color);
+}
+
+.site-nav .link {
+  display: block;
+  padding: 24px 0px;
+}
+
+.nav-list .link,
+.list-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .contacts-link {
