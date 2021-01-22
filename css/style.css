@@ -180,16 +180,17 @@ header > .container {
 
 /* === hero-button design === */
 .hero-button {
-  font-family: inherit;
-  font-weight: 700;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.9;
+  letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
   color: var(--hero-title-color);
-
-  padding: 10px 32px;
-  min-width: 200px;
 }
 
 /* === hidden title - main page === */
@@ -202,6 +203,27 @@ header > .container {
 }
 
 /* === features section === */
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-features > .container {
+  text-align: left;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list > li {
+  width: calc((100% - (3 * 30px)) / 4);
+}
+
+.features-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-size: inherit;
   text-transform: uppercase;
